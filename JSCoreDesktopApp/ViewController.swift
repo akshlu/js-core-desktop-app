@@ -20,6 +20,10 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
+    
+    override func viewDidDisappear() {
+        NSApplication.shared.terminate(self)
+    }
 
 
 }
