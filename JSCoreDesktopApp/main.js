@@ -1,11 +1,29 @@
-/**
- * Factorial
- * @value {Number}
- * @returns {Number}
- */ 
-function factorial(value) {
-	if (value <= 1) {
-		return 1;
-	}
-	return value * factorial(value - 1);
+// impl
+function View(props, ...children) {
+    return {
+        type: 'View',
+        ...props,
+        children
+    }
+}
+
+function Button(props) {
+    return {
+        type: 'Button',
+        ...props
+    }
+}
+
+
+// usage
+
+
+function Application() {
+    return View({},
+        Button({title: "Press me"})
+    );
+}
+
+function main() {
+    return Application()
 }
