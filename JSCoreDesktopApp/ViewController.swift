@@ -13,6 +13,8 @@ class ViewController: NSViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let button = NSButton(title: "Press me", target: nil, action: nil)
+        self.view.addSubview(button)
     }
 
     override var representedObject: Any? {
